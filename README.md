@@ -1,59 +1,110 @@
-# ApexBank
+````markdown
+# Apex Bank Landing Page
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+A modern, responsive Angular landing page for Apex Bank, featuring:
 
-## Development server
+- A dynamic header with bank name & tagline  
+- Split-screen “About” section & login form  
+- Standalone Angular components (Header, Login, About, Team, Support, Footer)  
+- SSG/Prerendering–ready setup  
+- Clean, corporate styling with CSS animations  
+- Fully responsive for desktop & mobile  
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## 👀 Demo
+
+![Landing Page Screenshot](docs/screenshot.png)  
+![image](https://github.com/user-attachments/assets/3d8e684c-5a8c-407e-9d8c-94e2d1be1fc4)
+
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js ≥ 16  
+- npm ≥ 8  
+- Angular CLI (optional, for global use):  
+  ```bash
+  npm install -g @angular/cli
+````
+
+### Installation
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/your-org/apex-bank.git
+   cd apex-bank
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Serve locally**
+
+   ```bash
+   npm run dev
+   # or
+   ng serve --open
+   ```
+
+   Your browser should open at `http://localhost:4200/`.
+
+---
+
+## 📁 Project Structure
+
+```
+falana-bank/
+├─ src/
+│  ├─ app/
+│  │  ├─ header/     # HeaderComponent (bank name/tagline)
+│  │  ├─ login/      # LoginComponent (split-page login)
+│  │  ├─ about/      # AboutComponent (bank description)
+│  │  ├─ team/       # TeamComponent (flip-card profiles)
+│  │  ├─ support/    # SupportComponent (contact info)
+│  │  ├─ footer/     # FooterComponent (footer links)
+│  │  ├─ app.ts      # Root standalone component
+│  │  ├─ app.html
+│  │  └─ app.css
+│  ├─ assets/        # Images, illustrations, icons
+│  ├─ styles.css     # Global styles
+│  ├─ main.ts        # Bootstrap file
+│  └─ index.html
+├─ angular.json
+├─ package.json
+└─ README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Animations**
+  All components use CSS keyframes; feel free to adjust durations or easing functions.
 
-```bash
-ng generate component component-name
+---
+
+## 🙋‍♂️ Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m "Add feature"`)
+4. Push to your branch (`git push origin feature/my-feature`)
+5. Open a Pull Request
+
+Please adhere to the existing code style and run `npm run lint` & `npm test` before submitting.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
